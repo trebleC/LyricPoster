@@ -1,0 +1,57 @@
+
+.container{
+    background-color:rgb(65, 216, 203);
+    width: 500px;
+    height: 600px;
+    
+    
+}
+
+p{
+    margin: 0%;
+}
+
+.date{
+    font-size: 50px;
+}
+
+.left{
+    float: left;
+   
+}
+
+.right{
+    float: right;
+}
+
+#title{
+    height: 30%;
+    height: 100px;
+    
+}
+
+#lyric{
+    margin-top:60px; 
+    margin-bottom:50px ;
+    height: 50%;
+}
+
+#more{
+    height: 20%;
+    margin-top: 60px;
+}
+
+
+.span_top,.span_bottom{
+    font-size: 50px;
+}
+.span_top{
+    text-align: left;
+}
+.span_bottom{
+    text-align: right;
+}
+.content{
+    text-align: center;
+    font-size: 50px;
+}
