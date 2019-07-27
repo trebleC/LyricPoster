@@ -1,8 +1,10 @@
 
 .container{
     background-color:rgb(65, 216, 203);
-    width: 500px;
-    height: 600px;
+    /* width: 500px;
+    height: 600px; */
+    width: 1080px;
+    height: 2160px;
     
     
 }
@@ -17,21 +19,27 @@ p{
 
 .left{
     float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: 华文仿宋;
    
 }
 
 .right{
     float: right;
+    margin-top: 50px;
 }
 
 #title{
-    height: 30%;
-    height: 100px;
+    
+    height: 380px;
+    
+    
     
 }
 
 #lyric{
-    margin-top:60px; 
+    margin-top:200px; 
     margin-bottom:50px ;
     height: 50%;
 }
@@ -43,8 +51,10 @@ p{
 
 
 .span_top,.span_bottom{
-    font-size: 50px;
+    font-size: 100px;
 }
+
+
 .span_top{
     text-align: left;
 }
@@ -53,5 +63,31 @@ p{
 }
 .content{
     text-align: center;
+    font-size: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    white-space: pre-wrap;
+}
+
+
+#ccal {
     font-size: 50px;
+    font-family: 华文仿宋;
+    font-style: initial
+
+    
+}
+
+#year{
+    font-size: 100px
+}
+
+#week{
+    font-size: 70px;
+}
+
+#day{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300px;
 }

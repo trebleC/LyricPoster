@@ -2,35 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
     <title>Lyric Poster</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  
 </head>
-<body>
-<div class="container">
+<body >
+<div class="container" id="container">
     <div id="title" >
         <div class="left">
-         <p>2019年7月</p>
-         <p>农历 六月十六</p>
-         <p>星期四</p>
+         <p id="ccal">{{ ccal }}</p>
+         <p id="year">{{ year }}</p>
+         <p id="week">{{ week }}</p>
         
         </div>
         <div class="right">
-         <span class="date">18日</span>
+         <span id="day" class="date">{{ day }}</span>
         </div>
 
     </div>
     <div id="lyric" >
         <p class="span_top">「</p>
-        <p class="content">The song I listen to when I lost</p>
+        <p class="content" v-html="content"><span>{{ content }}</span></p>
         <p class="span_bottom">」</p>
     </div>
 
     <div id="more">
-        <p>当我迷失时听这着的歌_@陈蕾</p>
-        <span>创作来源于爸爸歌</span>
+        <p id="songname">{{ songname }}</p>
+        <span id="detail">{{ detail }}</span>
 
     </div>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+<script src="dom-to-image/src/dom-to-image.js"></script>
+<script src="FileSaver.js/src/FileSaver.js"></script>
+<!-- <script src="dom2img.js"></script> -->
 </body>
 </html>
