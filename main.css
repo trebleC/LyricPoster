@@ -52,6 +52,10 @@ p{
     margin-top: 60px;
 }
 
+#songname{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
 
 .span_top,.span_bottom{
     font-size: 100px;

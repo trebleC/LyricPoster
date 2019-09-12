@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lyric Poster</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../main.css">
+  
+</head>
+<body >
+<div class="container" id="container" v-cloak>
+    <div id="title" >
+        <div class="left">
+         <p id="ccal">{{ ccal }}</p>
+         <p id="year">{{ year }}</p>
+         <p id="week">{{ week }}</p>
+        
+        </div>
+        <div class="right">
+         <span id="day" class="date">{{ day }}</span>
+        </div>
+
+    </div>
+    <div id="lyric" >
+        <p class="span_top">「</p>
+        <p class="content" v-html="content"><span>{{ content }}</span></p>
+        <p class="span_bottom">」</p>
+    </div>
+
+    <div id="more">
+        <p id="songname">{{ songname }}</p>
+        <span id="detail">{{ detail }}</span>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+<!-- <script src="dom-to-image/src/dom-to-image.js"></script> -->
+<!-- <script src="FileSaver.js/src/FileSaver.js"></script> -->
+<!-- <script src="dom2img.js"></script> -->
+</body>
+</html>
